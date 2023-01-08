@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CSNavLink<Label:View, Destination: View>: View {
+struct CSNavLink<Label: View, Destination: View>: View {
     
     let destination: Destination
     let label: Label

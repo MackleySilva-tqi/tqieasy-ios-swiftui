@@ -45,7 +45,7 @@ struct MyProfileView: View {
     
     var menu: some View{
         Section {
-            NavigationLink(destination: QuickLinksView()) {
+            NavigationLink(destination: QuickLinksView(scrums: QuickLinksCardModel.quickLinksList)) {
                 Label("Editar Perfil", systemImage: "square.and.pencil")
             }
             NavigationLink { Text("Alterar senha") } label:{

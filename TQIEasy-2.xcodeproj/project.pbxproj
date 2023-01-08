@@ -32,6 +32,9 @@
 		4FB17EF12878BA71001B402E /* MeritMoneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB17EF02878BA71001B402E /* MeritMoneyView.swift */; };
 		4FB17EF32878BA94001B402E /* JobsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB17EF22878BA94001B402E /* JobsView.swift */; };
 		4FB17EF52878BABC001B402E /* MyProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB17EF42878BABC001B402E /* MyProfileView.swift */; };
+		4FE2377F28A5765B0039312C /* QuickLinksCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE2377E28A5765B0039312C /* QuickLinksCardView.swift */; };
+		4FE2378128A576D20039312C /* QuickLinksCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE2378028A576D20039312C /* QuickLinksCardModel.swift */; };
+		4FE8EEB4296B138C00FB7904 /* VacationUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE8EEB3296B138C00FB7904 /* VacationUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +83,9 @@
 		4FB17EF02878BA71001B402E /* MeritMoneyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeritMoneyView.swift; sourceTree = "<group>"; };
 		4FB17EF22878BA94001B402E /* JobsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsView.swift; sourceTree = "<group>"; };
 		4FB17EF42878BABC001B402E /* MyProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileView.swift; sourceTree = "<group>"; };
+		4FE2377E28A5765B0039312C /* QuickLinksCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLinksCardView.swift; sourceTree = "<group>"; };
+		4FE2378028A576D20039312C /* QuickLinksCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLinksCardModel.swift; sourceTree = "<group>"; };
+		4FE8EEB3296B138C00FB7904 /* VacationUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacationUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				4F095675289D9E3D00A12144 /* CustomTabBarView.swift */,
-				4F095677289D9E6B00A12144 /* TabBarItemsPreferenceKey.swift */,
 				4F095679289D9E8900A12144 /* CustomTabBarContainerView.swift */,
+				4F095677289D9E6B00A12144 /* TabBarItemsPreferenceKey.swift */,
 			);
 			path = CustomTabBar;
 			sourceTree = "<group>";
@@ -127,7 +133,6 @@
 		4F50B651287EFAB700587CF2 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				4F50B652287EFACF00587CF2 /* ContentView.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -170,6 +175,22 @@
 			path = CustomNavBar;
 			sourceTree = "<group>";
 		};
+		4FAFBB6C28A5729200BD3953 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4FE2377E28A5765B0039312C /* QuickLinksCardView.swift */,
+				4FB17EEC2878BA24001B402E /* QuickLinksView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4FAFBB6D28A5729C00BD3953 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		4FB17EA42878B651001B402E = {
 			isa = PBXGroup;
 			children = (
@@ -190,11 +211,11 @@
 				4FB17EEA2878B898001B402E /* Jobs */,
 				4FB17EEB2878B904001B402E /* MyProfile */,
 				4F50B651287EFAB700587CF2 /* Navigation */,
-				4F50B654287EFB1100587CF2 /* Components */,
 				4FB17EE62878B85D001B402E /* Tabbar */,
 				4FB17EAA2878B651001B402E /* TQIEasy_2App.swift */,
 				4FB17EAC2878B653001B402E /* Assets.xcassets */,
 				4F09567D289DA56E00A12144 /* Example.swift */,
+				4F50B654287EFB1100587CF2 /* Components */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -239,6 +260,7 @@
 		4FB17EE62878B85D001B402E /* Tabbar */ = {
 			isa = PBXGroup;
 			children = (
+				4FE2377D28A576180039312C /* View */,
 				4F50B655287EFB5000587CF2 /* Model */,
 			);
 			path = Tabbar;
@@ -247,7 +269,8 @@
 		4FB17EE72878B878001B402E /* QuickLinks */ = {
 			isa = PBXGroup;
 			children = (
-				4FB17EEC2878BA24001B402E /* QuickLinksView.swift */,
+				4FE8EEB2296B136500FB7904 /* Vacation */,
+				4FE8EEB1296B135500FB7904 /* Root */,
 			);
 			path = QuickLinks;
 			sourceTree = "<group>";
@@ -282,6 +305,40 @@
 				4FB17EF42878BABC001B402E /* MyProfileView.swift */,
 			);
 			path = MyProfile;
+			sourceTree = "<group>";
+		};
+		4FE2377D28A576180039312C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4F50B652287EFACF00587CF2 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4FE2378228A57CAF0039312C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4FE2378028A576D20039312C /* QuickLinksCardModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4FE8EEB1296B135500FB7904 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				4FE2378228A57CAF0039312C /* Model */,
+				4FAFBB6D28A5729C00BD3953 /* ViewModel */,
+				4FAFBB6C28A5729200BD3953 /* View */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		4FE8EEB2296B136500FB7904 /* Vacation */ = {
+			isa = PBXGroup;
+			children = (
+				4FE8EEB3296B138C00FB7904 /* VacationUIView.swift */,
+			);
+			path = Vacation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -448,6 +505,7 @@
 				4F2262582894173000ACC8D2 /* CSNavLink.swift in Sources */,
 				4F095676289D9E3D00A12144 /* CustomTabBarView.swift in Sources */,
 				4F09567E289DA56E00A12144 /* Example.swift in Sources */,
+				4FE8EEB4296B138C00FB7904 /* VacationUIView.swift in Sources */,
 				4F09567A289D9E8900A12144 /* CustomTabBarContainerView.swift in Sources */,
 				4FB17ED22878B654001B402E /* TQIEasy_2App.swift in Sources */,
 				4F09567C289D9EA000A12144 /* TabBarItem.swift in Sources */,
@@ -455,6 +513,8 @@
 				4F2262542894130000ACC8D2 /* CustomNavBarContainerView.swift in Sources */,
 				4F095678289D9E6B00A12144 /* TabBarItemsPreferenceKey.swift in Sources */,
 				4FB17EF32878BA94001B402E /* JobsView.swift in Sources */,
+				4FE2378128A576D20039312C /* QuickLinksCardModel.swift in Sources */,
+				4FE2377F28A5765B0039312C /* QuickLinksCardView.swift in Sources */,
 				4FA812D02881A50200041049 /* CustomNavBarView.swift in Sources */,
 				4FB17EF12878BA71001B402E /* MeritMoneyView.swift in Sources */,
 				4FB17EF52878BABC001B402E /* MyProfileView.swift in Sources */,

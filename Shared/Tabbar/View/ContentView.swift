@@ -14,13 +14,13 @@ struct ContentView: View {
     
     var body: some View {
         CustomTabBarContainerView(selection: $tabSelection) {
-            QuickLinksView()
+            QuickLinksView(scrums: QuickLinksCardModel.quickLinksList)
                 .tabBarItem(tab: .home, selection: $tabSelection)
             Color.purple.opacity(0.3)
                 .tabBarItem(tab: .jobs, selection: $tabSelection)
             Color.red.opacity(0.3)
                 .tabBarItem(tab: .favorites, selection: $tabSelection)
-            Color.pink.opacity(0.3)
+            PeopleView()
                 .tabBarItem(tab: .people, selection: $tabSelection)
             MyProfileView()
                 .tabBarItem(tab: .profile, selection: $tabSelection)
